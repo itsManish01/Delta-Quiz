@@ -22,6 +22,8 @@ app.use(session({
     resave :false,
     saveUninitialized: false,
 }))
+
+app.use(express.static('./assessts'));
 app.use(passport.initialize());
 app.use(passport.session());
 

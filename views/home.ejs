@@ -1,24 +1,40 @@
 <%- include('header.ejs') %>
 
+<link rel="stylesheet" href="./css/home.css">
+
+
 <body>
+  <div class="bg">
+
     <section>
-        <ul class="nav justify-content-end">
-          <% if(user==false){ %>
+      <% if(user==false){ %>
+          <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link active" href="/login">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/signin">SignUp</a>
             </li>
+          </ul>
             <% } else { %>
-              <li class="nav-item">
-                <a class="nav-link active" href="/logout">Logout</a>
-              </li>
-            <%}%>
-        </ul>
+              <ul class="nav justify-content-end">
+          
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout">Logout</a>
+                </li>
+              </ul>
+      <%}%>
     </section>
-    <h1>Delta Quiz</h1>
-    
+
+      <div class="row">
+        <h1 class="col-6 d-flex justify-content-center">Delta Quiz</h1>
+        
+        <h3 class="col-6 d-flex justify-content-center">
+          Looking to do some online quizzes?
+        </h3>
+      </div>
+          
+        </div>
 </body>
 
 <%- include('footer.ejs') %>

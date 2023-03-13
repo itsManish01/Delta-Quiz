@@ -1,0 +1,29 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-image: url("../images/bg.jpg"); 
+  background-color: #cccccc; 
+  height:520px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+a{
+    color: black;
+    font-size: x-large;
+}
+li{
+    padding: 2%;
+    padding-top: 1%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-6{
+    margin: 0;
+    padding: 0;
+}
