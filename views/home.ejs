@@ -1,0 +1,24 @@
+<%- include('header.ejs') %>
+
+<body>
+    <section>
+        <ul class="nav justify-content-end">
+          <% if(user==false){ %>
+            <li class="nav-item">
+              <a class="nav-link active" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signin">SignUp</a>
+            </li>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link active" href="/logout">Logout</a>
+              </li>
+            <%}%>
+        </ul>
+    </section>
+    <h1>Delta Quiz</h1>
+    
+</body>
+
+<%- include('footer.ejs') %>

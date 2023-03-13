@@ -1,0 +1,15 @@
+<%- include('header.ejs') %>
+
+<body>
+    <h1>SignIn Page</h1>
+    <form action="/signin" method="post">
+    <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Your Name" required> 
+        <input type="email"  class="form-control" name="email" placeholder="Email" required> 
+        <input type="password" class="form-control" name="password" placeholder="password" required> 
+    </div>
+    <button class="btn btn-primary">Create Account</button>
+    </form>
+</body>
+
+<%- include('footer.ejs') %>
