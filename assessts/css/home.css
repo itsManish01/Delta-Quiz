@@ -13,6 +13,12 @@ body{
 a{
     color: black;
     font-size: x-large;
+    
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(11, 10, 12);
+    
 }
 li{
     padding: 2%;
@@ -20,10 +26,21 @@ li{
 }
 .row{
     display: flex;
+    height: 250px;
     align-items: center;
     justify-content: center;
 }
 .col-6{
     margin: 0;
     padding: 0;
+}
+.btn{
+    background-color: beige;
+    box-shadow: 0px 0px 10px 1px gray;
+    
+}
+.btn:hover{
+
+    transform: scale(1.03);
+        transition: 0.5s;
 }
